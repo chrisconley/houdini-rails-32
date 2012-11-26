@@ -41,7 +41,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.1)
-    houdini (0.3.1)
+    houdini (0.3.2)
       rails (> 3.0.0)
     i18n (0.6.1)
     journey (1.0.4)
@@ -110,7 +110,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  houdini (~> 0.3.1)
+  houdini (~> 0.3.2)
   jquery-rails
   mongoid (~> 3.0.0)
   moped

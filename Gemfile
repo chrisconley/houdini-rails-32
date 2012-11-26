@@ -6,7 +6,7 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'houdini', '~> 0.3.1'
+gem 'houdini', '~> 0.3.2'
 gem 'mongoid', '~> 3.0.0'
 gem 'origin'
 gem 'moped'
