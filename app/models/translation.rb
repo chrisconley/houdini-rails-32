@@ -7,15 +7,19 @@ class Translation
 
   houdini :spanish_translation_2,{
     :input => {
-    :product_description => "Test description.",
-    :product_name => "Test Product",
-    :product_url => "http://example.com",
-    :image_url => "http://example.com/image.jpg"
-  },
+      :product_description => "Test description.",
+      :product_name => :product_name,
+      :product_url => "http://example.com",
+      :image_url => "http://example.com/image.jpg"
+    },
     :on => :after_create,
     :after_submit => :after_houdini_sent,
     :on_task_completion => :process_translation_answer
   }
+
+  def product_name
+    "Test Product"
+  end
 
   def after_houdini_sent
     self.update_attributes(houdini_request_time: Time.now)
